@@ -1,0 +1,27 @@
+﻿@model IEnumerable<MangaList.Models.Elements>
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> FIRST PAGE BITCHESSSSS 
+    </div>
+    @foreach (var dick in Model)
+    {
+
+        <h3>Ахуєнний: @dick.login</h3>
+        <h2>Пароль: @dick.password</h2>
+  
+    <hr />
+    }
+</body>
+</html>
