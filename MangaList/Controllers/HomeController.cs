@@ -18,9 +18,25 @@ namespace MangaList.Controllers
             elements.Add(new Elements()
             {
                 login = "jackkim",
-            password = "1234"
+                password = "1234"
         });
 
+
+
+
+            return View(elements);
+        }
+
+
+        public ActionResult list()
+        {
+            List<Elements> elements = new List<Elements>();
+
+            elements.Add(new Elements()
+            {
+                login = "fuckoff",
+                password = "dddddd"
+            });
 
 
 
