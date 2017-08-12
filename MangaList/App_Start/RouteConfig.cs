@@ -17,9 +17,11 @@ namespace MangaList
             routes.MapRoute(
                 name: "Authorization",
                 url: "{controller}/{action}",
-                defaults: new { action = "list" }
+                defaults: new { Controller = "Home", action = "list" }
             );
-        }
+
+
+        } 
     }
 }
 
