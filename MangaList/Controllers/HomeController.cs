@@ -10,8 +10,8 @@ namespace MangaList.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
-        public ActionResult Index()
+    
+        public ActionResult Started_list()
         {
             List<Elements> elements = new List<Elements>();
 
@@ -28,7 +28,7 @@ namespace MangaList.Controllers
         }
 
 
-        public ActionResult list()
+        public ActionResult Authorization()
         {
             List<Elements> elements = new List<Elements>();
 
@@ -41,6 +41,11 @@ namespace MangaList.Controllers
 
 
             return View(elements);
+        }
+
+        public ActionResult Finished_list()
+        {
+            return View();
         }
     }
 }

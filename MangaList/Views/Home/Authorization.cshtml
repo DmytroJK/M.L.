@@ -10,21 +10,25 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <title>Authorization</title>
 </head>
-<body>
+<body> 
     <div>
-        FIRST PAGE BITCHESSSSS
+        <h1>FIRST PAGE BITCHESSSSS</h1>
     </div>
     @foreach (var dick in Model)
     {
 
-        <h3>Логин: @dick.login</h3>
+        <h2>Логин: @dick.login</h2>
         <h2>Пароль: @dick.password</h2>
+
+        @Html.ActionLink("Ссылка на страницу Started List", "Started_List", "Home");
         <hr />
-        @Html.ActionLink("Ссылка на страницу Index", "Index", "Home");
+        @Html.ActionLink("Ссылка на страницу Finished List", "Finished_List", "Home");
+        <hr />
         @: xyi
         <hr />
     }
+
 </body>
 </html>

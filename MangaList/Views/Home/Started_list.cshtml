@@ -1,0 +1,17 @@
+﻿@model IEnumerable<MangaList.Models.Elements>
+
+
+@{
+    ViewBag.Title = "Started list";
+}
+    <br />
+    <div><h1> All Started Manga</h1>
+    </div>
+    @foreach (var dick in Model)
+    {
+        <h3>Логин: @dick.login</h3>
+        <h3>Пароль: @dick.password</h3>
+        <hr />
+        @Html.ActionLink("Ссылка на страницу Finished List", "Finished_List", "Home");
+    }
+
