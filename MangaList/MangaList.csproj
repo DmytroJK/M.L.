@@ -131,6 +131,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\Authorization.cshtml" />
     <Content Include="Views\Home\Finished_list.cshtml" />
+    <Content Include="Views\Home\_piece.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
