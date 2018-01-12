@@ -14,20 +14,19 @@
 </head>
 <body> 
     <div>
-        <h1>FIRST PAGE BITCHESSSSS</h1>
+        <h1>FIRST PAGE</h1>
     </div>
-    @foreach (var dick in Model)
+    @foreach (var foo in Model)
     {
 
-        <h2>Логин: @dick.login</h2>
-        <h2>Пароль: @dick.password</h2>
+        <h2>Логин: @foo.login</h2>
+        <h2>Пароль: @foo.password</h2>
 
         @Html.ActionLink("Ссылка на страницу Started List", "Started_List", "Home");
         <hr />
         @Html.ActionLink("Ссылка на страницу Finished List", "Finished_List", "Home");
         <hr />
-        @: xyi
-        <hr />
+
     }
 
 </body>

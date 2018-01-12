@@ -34,7 +34,7 @@ namespace MangaList.Controllers
 
             elements.Add(new Elements()
             {
-                login = "fuckoff",
+                login = "login",
                 password = "dddddd"
             });
 
@@ -46,6 +46,14 @@ namespace MangaList.Controllers
         public ActionResult Finished_list()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult FirstForm (int x, int y)
+        {
+
+            ViewBag.Summ = x + y;
+            return View("Finished_list");
         }
     }
 }

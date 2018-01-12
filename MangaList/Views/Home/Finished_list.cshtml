@@ -7,6 +7,18 @@
 </div>
 <h2>Finished list:</h2>
 
+@using (Html.BeginForm("FirstForm", "Home"))
+    
+{ 
+    @Html.TextBox("x") <br/>
+    @Html.TextBox("y") <br />
+
+    if (ViewBag != null)
+    {
+        <p>@ViewBag.Summ</p>
+        <input type="submit" name="operation" value= "Get result" />   
+    }
+}
 @section Footer{ 
     <h1>this is my first footer</h1>
 
